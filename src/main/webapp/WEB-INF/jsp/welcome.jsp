@@ -9,6 +9,7 @@
   <li><a href="<spring:url value="/vets" htmlEscape="true" />">Display all veterinarians</a></li>
   <li><a href="<spring:url value="/static/html/tutorial.html" htmlEscape="true" />">Tutorial</a></li>
   <li><a href="<spring:url value="/static/html/tutorial.html" htmlEscape="true" />">Demo Link</a></li>
+  <li><a href="<spring:url value="/static/html/tutorial.html" htmlEscape="true" />">Demo Link2</a></li>
 </ul>
 
 <p>&nbsp;</p>
