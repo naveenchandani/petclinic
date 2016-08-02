@@ -19,6 +19,13 @@
             <build>
                         <finalName>PetClinic</finalName>
             </build>
+            <distributionManagement>
+               <repository>
+                 <id>petclinic</id>
+                 <url>http://10.75.50.28:8081/content/repositories/petclinic</url>
+               </repository>
+            </distributionManagement>
+
             <dependencies>
                         <dependency>
                                     <groupId>junit</groupId>
