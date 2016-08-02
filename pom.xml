@@ -16,9 +16,9 @@
             <packaging>war</packaging>
             <name>PetClinic Maven Webapp</name>
             <url>http://www.xebialabs.com</url>
-            <build>
+            <!-- build>
                         <finalName>PetClinic</finalName>
-            </build>
+            </build -->
             <distributionManagement>
                <repository>
                  <id>petclinic</id>
