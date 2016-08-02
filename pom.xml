@@ -16,46 +16,9 @@
             <packaging>war</packaging>
             <name>PetClinic Maven Webapp</name>
             <url>http://www.xebialabs.com</url>
-            <!-- build>
+            <build>
                         <finalName>PetClinic</finalName>
-            </build -->
-            <distributionManagement>
-               <repository>
-                 <id>petclinic</id>
-                 <url>http://10.75.50.28:8081/content/repositories/petclinic</url>
-               </repository>
-            </distributionManagement>
-          <build>
-            <plugins>
-              <plugin>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.7</version>
-                <executions>
-                  <execution>
-                    <phase>compile</phase>
-                    <configuration>
-                      <target>
-                        <!-- dump all available properties -->
-                        <echoproperties />
-                        <exec dir="." executable="cmd" osfamily="windows">
-                          <arg value="/c"/>
-                          <arg value="deploy.cmd ${maven.dependency.com.foobar.templates.maventemplate-ear.ear.path} ${environment} ${distversion}"/>
-                        </exec>
-                        <exec dir="." executable="/bin/bash" osfamily="unix">
-                          <arg value="-c"/>
-                          <arg value="./deploy.sh ${maven.dependency.com.foobar.templates.maventemplate-ear.ear.path} ${environment} ${distversion}"/>
-                        </exec>
-                      </target>
-                    </configuration>
-                    <goals>
-                      <goal>run</goal>
-                    </goals>
-                  </execution>
-                </executions>
-              </plugin>
-            </plugins>
-          </build>
-
+            </build>
             <dependencies>
                         <dependency>
                                     <groupId>junit</groupId>
