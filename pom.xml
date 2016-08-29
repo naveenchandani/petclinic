@@ -9,7 +9,7 @@
      <artifactId>deployit-petclinic-parent</artifactId>
      <version>1.0</version>
             </parent-->
-        <groupId>PetClinic</groupId>
+        <groupId>com.xebialabs.deployit.demos</groupId>
             <artifactId>PetClinic</artifactId>
             <version>1.0</version>
             <!--version>1.0</version -->
@@ -30,7 +30,7 @@
               <build>
                       <plugins>
                         <plugin>
-                          <groupId>PetClinic</groupId>
+                          <groupId>com.xebialabs.deployit.demos</groupId>
                           <artifactId>PetClinic</artifactId>
                           <version>1.0</version>
                           <executions>
