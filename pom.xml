@@ -30,8 +30,8 @@
               <build>
                       <plugins>
                         <plugin>
-                          <groupId>Petclinic</groupId>
-                          <artifactId>Petclinic</artifactId>
+                          <groupId>PetClinic</groupId>
+                          <artifactId>PetClinic</artifactId>
                           <version>1.0</version>
                           <executions>
                             <execution>
