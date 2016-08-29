@@ -17,7 +17,12 @@
             <name>PetClinic Maven Webapp</name>
             <url>http://www.xebialabs.com</url>
             <build>
-	         <item>buildNumber</item>
+	          <format>Build: #{0} ({1,date})</format>
+     		  <items>
+                      <item>buildNumber\d*</item>
+                      <item>timestamp</item>
+                  </items>
+	         
                   <finalName>PetClinic.${buildNumber}</finalName>
             </build>
             <dependencies>
