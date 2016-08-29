@@ -10,7 +10,7 @@
   <li><a href="<spring:url value="/static/html/tutorial.html" htmlEscape="true" />">Tutorial</a></li>
   <li><a href="<spring:url value="/static/html/tutorial.html" htmlEscape="true" />">Demo Link</a></li>
   <li><a href="<spring:url value="/static/html/tutorial.html" htmlEscape="true" />">Demo Link2</a></li>
-  <li><a href="<spring:url value="/static/html/tutorial.html" htmlEscape="true" />">This is a demo3 link just created</a></li>
+  <li><a href="<spring:url value="/static/html/tutorial.html" htmlEscape="true" />">This is a demo4 link just created</a></li>
   
 </ul>
 
