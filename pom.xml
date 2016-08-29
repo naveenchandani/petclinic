@@ -9,7 +9,7 @@
      <artifactId>deployit-petclinic-parent</artifactId>
      <version>1.0</version>
             </parent-->
-        <groupId>com.xebialabs.deployit.demos.jonas</groupId>
+        <groupId>PetClinic</groupId>
             <artifactId>PetClinic</artifactId>
             <version>1.0</version>
             <!--version>1.0</version -->
@@ -27,5 +27,32 @@
                                     <scope>test</scope>
                         </dependency>
             </dependencies>
-            
+              <build>
+                      <plugins>
+                        <plugin>
+                          <groupId>Petclinic</groupId>
+                          <artifactId>Petclinic</artifactId>
+                          <version>1.0</version>
+                          <executions>
+                            <execution>
+                              <id>buildnumber</id>
+                              <phase>validate</phase>
+                              <goals>
+                                <goal>create</goal>
+                              </goals>
+                            </execution>
+                          </executions>
+                          <configuration>
+                            <format>{0,number}</format>
+                            <items>
+                              <item>buildNumber</item>
+                            </items>                    
+                            <doCheck>false</doCheck>
+                            <doUpdate>false</doUpdate>
+                            <revisionOnScmFailure>unknownbuild</revisionOnScmFailure>   
+                          </configuration>
+                        </plugin>    
+                      </plugins>
+                      <finalName>${project.artifactId}-${project.version}.${buildNumber}</finalName>
+                  </build>
 </project>
