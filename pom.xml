@@ -17,7 +17,23 @@
             <name>PetClinic Maven Webapp</name>
             <url>http://www.xebialabs.com</url>
             <build>
-                        <finalName>PetClinic</finalName>
+		<finalName>PetClinic</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.liquibase</groupId>
+				<artifactId>liquibase-maven-plugin</artifactId>
+				<configuration>
+					<changeLogFile>
+						${basedir}/master.sql
+					</changeLogFile>
+					<driver>com.mysql.jdbc.Driver</driver>
+					<url>jdbc:mysql://10.207.231.250:3306/petclinic</url>
+					<username>wp</username>
+					<password>wipro</password>
+				</configuration>
+			</plugin>
+		</plugins>
+
             </build>
             <dependencies>
                         <dependency>
