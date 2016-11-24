@@ -10,7 +10,7 @@
   <li><a href="<spring:url value="/static/html/tutorial.html" htmlEscape="true" />">Tutorial</a></li>
   <li><a href="<spring:url value="/static/html/tutorial.html" htmlEscape="true" />">Demo Link</a></li>
   <li><a href="<spring:url value="/static/html/tutorial.html" htmlEscape="true" />">Demo Link2</a></li>
-  <li><a href="<spring:url value="/static/html/tutorial.html" htmlEscape="true" />">Demo link created on 23rd</a></li>
+  <li><a href="<spring:url value="/static/html/tutorial.html" htmlEscape="true" />">Demo link created on final test with liquibase</a></li>
   
 </ul>
 
