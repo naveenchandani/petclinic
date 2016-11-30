@@ -11,7 +11,7 @@
             </parent-->
         <groupId>com.xebialabs.deployit.demos.jonas</groupId>
             <artifactId>PetClinic</artifactId>
-            <version>1.0${buildNumber}</version>
+            <version>1.0${BUILD_NUMBER}</version>
             <!--version>1.0</version -->
             <packaging>war</packaging>
             <name>PetClinic Maven Webapp</name>
