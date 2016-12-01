@@ -4,12 +4,12 @@
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'>
   <changeSet id="002" author="Yegor">
     <sql>
-	create table test2 ( id int primary key, name varchar(255));
-	insert into test2 (id, name) values (3, "name 3");
-	insert into test2 (id, name) values (4, "name 4");
+        insert into types (name) values ('Elephant');
     </sql>
     <rollback>
-        <dropTable tableName="test2"/>
+            <sql>
+                delete from types where name='Elephant';
+            </sql>
     </rollback>
   </changeSet>
 </databaseChangeLog>
