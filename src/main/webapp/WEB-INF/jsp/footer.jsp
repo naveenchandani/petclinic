@@ -4,7 +4,7 @@ As part of enhancement 2 we will add contacts link. -->
   <table class="footer">
     <tr>
       <td>
-      	<a href="<spring:url value="/" htmlEscape="true" />">Home</a>
+      	<a href="<spring:url value="/" htmlEscape="true">Home</a>
       	
       	
       </td>
