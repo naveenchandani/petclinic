@@ -6,7 +6,7 @@
       	<a class="atagspace" href="#" id="contacts" >Contact</a>
       	
       </td>
-      <td align="right"><img src="<spring:url value="/static/images/springsource-logo.png" htmlEscape="true" />" alt="Sponsored by SpringSource"/></td>
+      <td align="right"><img src="<spring:url value="/static/images/springsource-logo.png" htmlEscape="true" alt="Sponsored by SpringSource" /></td>
     </tr>
   </table>
   </div>
