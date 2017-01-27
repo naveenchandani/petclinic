@@ -5,13 +5,13 @@
   <changeSet id="014" author="Ashwin">
     <sql>
 	use petclinic;
-        insert into types (name) values ('New Pet');
+        insert into types (name) values ('Elephant');
 
     </sql>
     <rollback>
             <sql>
 		use petclinic;
-                delete from types where name='New Pet';
+                delete from types where name='Elephant';
 
             </sql>
     </rollback>
