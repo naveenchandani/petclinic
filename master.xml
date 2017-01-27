@@ -2,16 +2,16 @@
   xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
   xsi:schemaLocation='http://www.liquibase.org/xml/ns/dbchangelog
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'>
-  <changeSet id="013" author="Ashwin">
+  <changeSet id="014" author="Ashwin">
     <sql>
 	use petclinic;
-        insert into types (name) values ('Elephant');
+        insert into types (name) values ('New Pet');
 
     </sql>
     <rollback>
             <sql>
 		use petclinic;
-                delete from types where name='Elephant';
+                delete from types where name='New Pet';
 
             </sql>
     </rollback>
