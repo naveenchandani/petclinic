@@ -2,9 +2,16 @@
   xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
   xsi:schemaLocation='http://www.liquibase.org/xml/ns/dbchangelog
     http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd'>
-
-	<include file="src/main/resources/liquibase/db-changelog-1.0.xml" />
-	<include file="src/main/resources/liquibase/db-changelog-1.2.xml" />
-	<include file="src/main/resources/liquibase/db-changelog-1.3.xml" />
-
+  <changeSet id="105" author="Ashwin">
+    <sql>
+	use petclinic;
+		insert into types (name) values ('Sparrow');
+    </sql>
+    <rollback>
+            <sql>
+		use petclinic;
+				delete from types where name='Sparrow';
+            </sql>
+    </rollback>
+  </changeSet>
 </databaseChangeLog>
