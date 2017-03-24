@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <modelVersion>4.0.0</modelVersion>
+
+            <!--dummy-->
+            <!--parent>
+     <groupId>com.xebialabs.deployit.demos</groupId>
+     <artifactId>deployit-petclinic-parent</artifactId>
+     <version>1.0</version>
+            </parent-->
+        <groupId>Wipro</groupId>
+            <artifactId>PetClinic</artifactId>
+            <version>1.0.${BUILD_NUMBER}</version>
+            <!--version>1.0</version -->
+            <packaging>war</packaging>
+            <name>PetClinic Maven Webapp</name>
+            <url>http://www.xebialabs.com</url>
+            <build>
+		<finalName>PetClinic</finalName>
+
+            </build>
+            <dependencies>
+                        <dependency>
+                            <groupId>junit</groupId>
+                            <artifactId>junit</artifactId>
+                            <version>3.8.1</version>
+                            <scope>test</scope>
+                        </dependency>
+			<dependency>
+			    <groupId>org.liquibase</groupId>
+			    <artifactId>liquibase-core</artifactId>
+			    <version>3.0.5</version>
+			</dependency>
+			<dependency>
+			    <groupId>mysql</groupId>
+			    <artifactId>mysql-connector-java</artifactId>
+			    <version>5.1.25</version>
+			</dependency>
+            </dependencies>
+
+</project>
