@@ -15,7 +15,7 @@
 </html>
 
 
-<div id="dialog" title="CONTACT INFRMTION" style="display:none;">
+<div id="dialog" title="CONTACT INFRTION" style="display:none;">
         <div style="border: 2px solid gray; border-radius: 5px; padding:10px; width:160px; text-align:center">
                 <strong>GIS Opensource</strong><br />
                 Wipro Limited,<br />
